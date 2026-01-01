@@ -1,14 +1,19 @@
-function Login() {
-    return(
-        <div>
-            <h1>Portal EduGestão</h1>
-            <input type="text" placeholder="Usuário" /> 
-            <br />
-            <input type="password" placeholder="Senha" />
-            <br />
-            <button>Entrar</button>
-        </div>
+import "./login.css";
 
+function Login() {
+    return (
+        <div className="login-container">
+            <div className="login-box">
+                <h2>Portal EduGestão</h2>
+
+
+                <input type="text" placeholder="Usuário" />
+                <input type="password" placeholder="Senha" />
+
+
+                <button>Entrar</button>
+            </div>
+        </div>
     );
 }
 export default Login;

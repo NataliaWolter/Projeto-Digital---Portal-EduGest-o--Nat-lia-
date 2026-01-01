@@ -1,0 +1,26 @@
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box {
+    padding: 24px;
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.login-box h2 {
+    text-align: center;
+}
+.login-box input {
+    padding: 12px;
+    font-size: 16px;
+}
+.login-box button {
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
