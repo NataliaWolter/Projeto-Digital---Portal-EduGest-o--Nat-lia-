@@ -1,19 +1,42 @@
+import { useState } from "react";
 import "./login.css";
 
 function Login() {
-    return (
-        <div className="login-container">
-            <div className="login-box">
-                <h2>Portal EduGestão</h2>
+  const [user, setUser] = useState("");
+  const [password, setPassword] = useState("");
 
+  function handleLogin() {
+    if (!user || !password) {
+      alert("Preencha usuário e senha");
+      return;
+    }
 
-                <input type="text" placeholder="Usuário" />
-                <input type="password" placeholder="Senha" />
+    alert(`Bem-vindo(a), ${user}!`);
+  }
 
+  return (
+    <div className="login-container">
+      <div className="login-box">
+        <h1>Portal EduGestão</h1>
 
-                <button>Entrar</button>
-            </div>
-        </div>
-    );
+        <input
+          type="text"
+          placeholder="Usuário"
+          value={user}
+          onChange={(e) => setUser(e.target.value)}
+        />
+
+        <input
+          type="password"
+          placeholder="Senha"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
+        <button onClick={handleLogin}>Entrar</button>
+      </div>
+    </div>
+  );
 }
+
 export default Login;
