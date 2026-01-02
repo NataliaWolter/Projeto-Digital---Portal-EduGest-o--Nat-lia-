@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./login.css";
 import logo from "../assets/logoPortalInicio.png";
 
-function Login() {
+function Login({ onLogin }) {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
 
@@ -12,7 +12,7 @@ function Login() {
       return;
     }
 
-    alert(`Bem-vindo(a), ${user}!`);
+    onLogin();
   }
 
   return (
