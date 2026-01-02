@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./login.css";
+import logo from "../assets/logoPortalInicio.png";
 
 function Login() {
   const [user, setUser] = useState("");
@@ -17,7 +18,13 @@ function Login() {
   return (
     <div className="login-container">
       <div className="login-box">
-        
+
+        <img
+          src={logo}
+          alt="Logo do Portal EduGestão"
+          className="login-logo"
+        />
+
         <h1>Portal EduGestão</h1>
 
         <input
