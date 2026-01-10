@@ -1,0 +1,53 @@
+.dashboard {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #ff9800, #cc5500);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard h1 {
+  margin-bottom: 32px;
+  font-size: 42px;
+  color: #ffffff;
+}
+
+.cards-container {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.card {
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  padding: 24px;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  font-size: 26px;
+}
+
+.card p {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.alunos {
+  border-top: 6px solid #8d88eb;
+}
+
+.vagas {
+  border-top: 6px solid #88e9ac;
+}

@@ -25,3 +25,8 @@ dist-ssr
 IA/
 notasIA.txt/
 notasProjeto.txt/
+node_modules/
+dist/
+.env
+.DS_Store
+.vscode/

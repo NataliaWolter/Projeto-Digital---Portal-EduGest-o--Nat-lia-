@@ -1,0 +1,70 @@
+.pagina {
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* ===== TURMAS ===== */
+
+.lista-turmas {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-turma {
+  background-color: #f4f6fa;
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-turma:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-turma h2 {
+  margin: 0 0 10px;
+}
+
+.card-turma p {
+  font-weight: bold;
+  color: #555;
+}
+
+/* ===== ALUNOS ===== */
+
+.lista-alunos {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+}
+
+.aluno {
+  background-color: #f1f1f1;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aluno.especial {
+  background-color: #ffe6e6;
+  border-left: 6px solid #ff4d4d;
+}
+
+.badge {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
