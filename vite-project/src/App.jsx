@@ -1,18 +1,18 @@
-import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+
 import Login from "./pages/Login";
 import DashboardEscola from "./pages/DashboardEscola";
+import Turmas from "./pages/Turmas";
+import AlunosTurma from "./pages/AlunosTurma";
 
 function App() {
-  const [isLogged, setIsLogged] = useState(false);
-
   return (
-    <>
-      {isLogged ? (
-        <DashboardEscola />
-      ) : (
-        <Login onLogin={() => setIsLogged(true)} />
-      )}
-    </>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/dashboard" element={<DashboardEscola />} />
+      <Route path="/turmas" element={<Turmas />} />
+      <Route path="/turma/:id" element={<AlunosTurma />} />
+    </Routes>
   );
 }
 

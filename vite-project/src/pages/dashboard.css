@@ -1,7 +1,7 @@
 .dashboard {
   min-height: 100vh;
   padding: 40px;
-  background: linear-gradient(135deg, #ff9800, #cc5500);
+  background: linear-gradient(135deg, #f45f02, #ffffff);
 
   display: flex;
   flex-direction: column;
@@ -52,4 +52,39 @@
 
 .vagas {
   border-top: 6px solid #88e9ac;
+}
+
+.acoes-container {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.card-acao {
+  background: linear-gradient(135deg, #d2cec2, #ffffff);
+  color: rgb(231, 78, 17);
+  padding: 15px;
+  border-radius: 18px;
+  cursor: pointer;
+  align-items: center;
+
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card-acao h3 {
+  font-size: 20px;
+}
+
+.card-acao p {
+  opacity: 0.9;
+}
+
+.card-acao:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
 }

@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./login.css";
 import logo from "../assets/logoPortalInicio.png";
 
-function Login({ onLogin }) {
+function Login() {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   function handleLogin() {
     if (!user || !password) {
@@ -12,13 +14,13 @@ function Login({ onLogin }) {
       return;
     }
 
-    onLogin();
+    console.log("Login OK, indo para dashboard");
+    navigate("/dashboard");
   }
 
   return (
     <div className="login-container">
       <div className="login-box">
-
         <img
           src={logo}
           alt="Logo do Portal EduGestão"

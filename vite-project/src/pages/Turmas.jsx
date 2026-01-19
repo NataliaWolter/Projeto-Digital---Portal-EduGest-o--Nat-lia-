@@ -1,19 +1,50 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "./turmas.css";
 
 function Turmas() {
   const navigate = useNavigate();
 
-  const turmas = [
+  const [turmas, setTurmas] = useState([
     { id: 1, nome: "1º Ano A", alunos: 25 },
     { id: 2, nome: "2º Ano B", alunos: 28 },
     { id: 3, nome: "3º Ano C", alunos: 22 },
-  ];
+  ]);
+
+  const [novaTurma, setNovaTurma] = useState("");
+
+  function adicionarTurma() {
+    if (!novaTurma.trim()) {
+      alert("Digite o nome da turma");
+      return;
+    }
+
+    const nova = {
+      id: Date.now(),
+      nome: novaTurma,
+      alunos: 0,
+    };
+
+    setTurmas([...turmas, nova]);
+    setNovaTurma("");
+  }
 
   return (
     <div className="pagina">
       <h1>Gestão de Turmas</h1>
 
+      {/* FORMULÁRIO */}
+      <div className="form-turma">
+        <input
+          type="text"
+          placeholder="Nome da nova turma"
+          value={novaTurma}
+          onChange={(e) => setNovaTurma(e.target.value)}
+        />
+        <button onClick={adicionarTurma}>Adicionar</button>
+      </div>
+
+      {/* LISTA */}
       <div className="lista-turmas">
         {turmas.map((turma) => (
           <div

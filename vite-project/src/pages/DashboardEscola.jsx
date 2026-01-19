@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import "./dashboard.css";
 
 function DashboardEscola() {
+  const navigate = useNavigate();
+
   return (
     <div className="dashboard">
       <h1>Minha Escola</h1>
@@ -14,6 +17,17 @@ function DashboardEscola() {
         <div className="card vagas">
           <h3>Vagas Livres</h3>
           <p>45</p>
+        </div>
+      </div>
+
+      {/* AÇÕES */}
+      <div className="acoes-container">
+        <div
+          className="card-acao"
+          onClick={() => navigate("/turmas")}
+        >
+          <h3>📚 Gestão de Turmas</h3>
+          <p>Criar e gerenciar turmas e alunos</p>
         </div>
       </div>
     </div>

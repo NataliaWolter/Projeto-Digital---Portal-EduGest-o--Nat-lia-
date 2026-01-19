@@ -68,3 +68,55 @@ h1 {
   border-radius: 12px;
   font-size: 12px;
 }
+
+.form-turma {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-turma input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.form-turma button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff9800;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-turma button:hover {
+  background-color: #e68900;
+}
+.form-turma {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.form-turma input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.form-turma button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff9800;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-turma button:hover {
+  background-color: #e68900;
+}
