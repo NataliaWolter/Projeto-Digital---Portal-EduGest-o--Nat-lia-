@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "./turmas.css";
 
 function AlunosTurma() {
   const { id } = useParams();
+  const navigate = useNavigate();
 
   const alunos = [
     { id: 1, nome: "Ana Souza", especial: false },
@@ -13,16 +14,23 @@ function AlunosTurma() {
 
   return (
     <div className="pagina">
+      <button className="btn-voltar" onClick={() => navigate(-1)}>
+        ← Voltar
+      </button>
+
       <h1>Alunos da Turma {id}</h1>
 
       <ul className="lista-alunos">
         {alunos.map((aluno) => (
           <li
             key={aluno.id}
-            className={aluno.especial ? "aluno especial" : "aluno"}
+            className={`aluno ${aluno.especial ? "especial" : ""}`}
           >
-            {aluno.nome}
-            {aluno.especial && <span className="badge">Especial</span>}
+            <span>{aluno.nome}</span>
+
+            {aluno.especial && (
+              <span className="badge">Especial</span>
+            )}
           </li>
         ))}
       </ul>

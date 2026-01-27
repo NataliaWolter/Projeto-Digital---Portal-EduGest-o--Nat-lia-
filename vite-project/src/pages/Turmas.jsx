@@ -31,9 +31,16 @@ function Turmas() {
 
   return (
     <div className="pagina">
+
+      <button
+        className="btn-voltar"
+        onClick={() => navigate("/dashboard")}
+      >
+        ← Voltar para o Dashboard
+      </button>
+
       <h1>Gestão de Turmas</h1>
 
-      {/* FORMULÁRIO */}
       <div className="form-turma">
         <input
           type="text"
@@ -44,7 +51,6 @@ function Turmas() {
         <button onClick={adicionarTurma}>Adicionar</button>
       </div>
 
-      {/* LISTA */}
       <div className="lista-turmas">
         {turmas.map((turma) => (
           <div

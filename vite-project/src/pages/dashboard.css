@@ -1,7 +1,7 @@
 .dashboard {
   min-height: 100vh;
   padding: 40px;
-  background: linear-gradient(135deg, #f45f02, #ffffff);
+  background: linear-gradient(180deg, #fff7ed, #f9fafb);
 
   display: flex;
   flex-direction: column;
@@ -10,24 +10,25 @@
 
 .dashboard h1 {
   margin-bottom: 32px;
-  font-size: 42px;
-  color: #ffffff;
+  font-size: 40px;
+  color: #1f2937;
 }
 
+/* CARDS */
 .cards-container {
   display: flex;
   gap: 24px;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .card {
   flex: 1;
   background-color: #ffffff;
-  border-radius: 16px;
-  padding: 24px;
+  border-radius: 22px;
+  padding: 28px;
 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 
   display: flex;
   flex-direction: column;
@@ -35,45 +36,47 @@
 }
 
 .card h3 {
-  margin-bottom: 12px;
-  font-size: 24px;
-  color: #444;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #374151;
 }
 
 .card p {
-  font-size: 36px;
-  font-weight: bold;
-  color: #222;
+  font-size: 38px;
+  font-weight: 700;
+  color: #111827;
 }
 
+/* VARIAÇÕES */
 .alunos {
-  border-top: 6px solid #8d88eb;
+  border-top: 6px solid #f97316;
 }
 
 .vagas {
-  border-top: 6px solid #88e9ac;
+  border-top: 6px solid #fb923c;
 }
 
+/* AÇÕES */
 .acoes-container {
-  margin-top: 40px;
+  margin-top: 48px;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .card-acao {
-  background: linear-gradient(135deg, #d2cec2, #ffffff);
-  color: rgb(231, 78, 17);
-  padding: 15px;
-  border-radius: 18px;
+  background: linear-gradient(135deg, #fff7ed, #ffffff);
+  color: #9a3412;
+  padding: 20px;
+  border-radius: 22px;
   cursor: pointer;
-  align-items: center;
 
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
+  align-items: center;
 }
 
 .card-acao h3 {
@@ -81,10 +84,10 @@
 }
 
 .card-acao p {
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 .card-acao:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
 }

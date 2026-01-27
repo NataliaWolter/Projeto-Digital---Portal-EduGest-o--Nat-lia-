@@ -1,122 +1,146 @@
-.pagina {
-  padding: 30px;
-  font-family: Arial, sans-serif;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-/* ===== TURMAS ===== */
-
-.lista-turmas {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card-turma {
-  background-color: #f4f6fa;
-  border-radius: 12px;
-  padding: 20px;
-  width: 200px;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.card-turma:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.card-turma h2 {
-  margin: 0 0 10px;
-}
-
-.card-turma p {
-  font-weight: bold;
-  color: #555;
-}
-
-/* ===== ALUNOS ===== */
-
-.lista-alunos {
-  list-style: none;
+* {
+  margin: 0;
   padding: 0;
-  max-width: 400px;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
 }
 
-.aluno {
-  background-color: #f1f1f1;
-  padding: 12px;
-  margin-bottom: 10px;
-  border-radius: 8px;
+.pagina {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(180deg, #fff7ed, #f9fafb);
+
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
-.aluno.especial {
-  background-color: #ffe6e6;
-  border-left: 6px solid #ff4d4d;
-}
-
-.badge {
-  background-color: #ff4d4d;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 12px;
-  font-size: 12px;
-}
-
-.form-turma {
-  display: flex;
-  gap: 10px;
+.btn-voltar {
+  align-self: flex-start;
   margin-bottom: 20px;
-}
 
-.form-turma input {
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  flex: 1;
-}
-
-.form-turma button {
-  padding: 10px 16px;
+  background: none;
   border: none;
-  border-radius: 6px;
-  background-color: #ff9800;
-  color: #fff;
+  color: #f97316;
+  font-size: 14px;
   cursor: pointer;
 }
 
-.form-turma button:hover {
-  background-color: #e68900;
+.btn-voltar:hover {
+  text-decoration: underline;
 }
+
+.pagina h1 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #1f2937;
+}
+
+/* FORM */
 .form-turma {
+  width: 100%;
+  max-width: 520px;
+
   display: flex;
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .form-turma input {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
   flex: 1;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.form-turma input:focus {
+  outline: none;
+  border-color: #f97316;
 }
 
 .form-turma button {
-  padding: 10px 18px;
-  border-radius: 8px;
+  padding: 14px 24px;
+  border-radius: 14px;
   border: none;
-  background-color: #ff9800;
-  color: #fff;
-  font-weight: bold;
+  background: #f97316;
+  color: #ffffff;
+  font-weight: 600;
   cursor: pointer;
 }
 
 .form-turma button:hover {
-  background-color: #e68900;
+  background: #ea580c;
+}
+
+/* LISTA */
+.lista-turmas {
+  width: 100%;
+  max-width: 920px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.card-turma {
+  background-color: #ffffff;
+  border-radius: 22px;
+  padding: 26px;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.card-turma:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.card-turma h2 {
+  font-size: 18px;
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+.card-turma p {
+  font-size: 14px;
+  color: #6b7280;
+}
+.lista-alunos {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.aluno {
+  background-color: #fff;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  font-size: 16px;
+}
+
+/* ALUNO ESPECIAL */
+.aluno.especial {
+  background-color: #fff7ed;
+  border-left: 6px solid #f97316;
+}
+
+/* BADGE */
+.badge {
+  background-color: #f97316;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
 }
