@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./servidores.css";
 
 function Servidores() {
+  const navigate = useNavigate();
+
   const servidores = [
     {
       id: 1,
@@ -35,9 +38,15 @@ function Servidores() {
 
   return (
     <div className="pagina servidores">
+      <button
+        className="btn-voltar"
+        onClick={() => navigate("/dashboard")}
+      >
+        ← Voltar para o Dashboard
+      </button>
+
       <h1>Gestão de Servidores</h1>
 
-      {/* FILTRO */}
       <div className="filtros">
         <select
           value={filtroFuncao}
@@ -52,7 +61,6 @@ function Servidores() {
         </select>
       </div>
 
-      {/* TABELA */}
       <table className="tabela-servidores">
         <thead>
           <tr>
