@@ -29,7 +29,16 @@ function DashboardEscola() {
           <h3>📚 Gestão de Turmas</h3>
           <p>Criar e gerenciar turmas e alunos</p>
         </div>
+
+        <div
+          className="card-acao"
+          onClick={() => navigate("/servidores")}
+        >
+          <h3>👩‍🏫 Gestão de Servidores</h3>
+          <p>Visualizar e organizar o corpo docente</p>
+        </div>
       </div>
+
     </div>
   );
 }

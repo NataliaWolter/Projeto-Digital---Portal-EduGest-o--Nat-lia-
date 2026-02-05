@@ -1,0 +1,45 @@
+.tabela-servidores {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+
+.tabela-servidores th,
+.tabela-servidores td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.tabela-servidores th {
+  background: #fff3e0;
+  color: #cc5500;
+}
+
+.status {
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.status.ativo {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status.inativo {
+  background: #fdecea;
+  color: #c62828;
+}
+.filtros {
+  margin: 20px 0;
+}
+
+.filtros select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
