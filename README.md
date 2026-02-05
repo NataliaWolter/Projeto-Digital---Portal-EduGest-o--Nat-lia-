@@ -5,13 +5,13 @@ O objetivo é permitir que escolas lancem informações básicas e que a secreta
 
 Este projeto faz parte do curso de Frontend do programa **Futuro Digital**, promovido pelo **Instituto Federal do Rio Grande do Sul (IFRS)**.
 
----
+
 
 **Objetivo**
 
 Criar uma interface intuitiva para simular a rotina administrativa de uma escola, praticando conceitos fundamentais de frontend, organização de telas e lógica de navegação.
 
----
+
 
 **Funcionalidades**
 
@@ -22,7 +22,7 @@ Criar uma interface intuitiva para simular a rotina administrativa de uma escola
 - Visualização geral para a secretaria  
 - Layout responsivo para tablets
 
----
+
 
 **Tecnologias Utilizadas**
 
@@ -30,13 +30,13 @@ Criar uma interface intuitiva para simular a rotina administrativa de uma escola
 - CSS  
 - JavaScript  
 - Framework Frontend: React
----
+
 
 **Status do Projeto**
 
 Em desenvolvimento, projeto acadêmico com etapas de entrega.
 
----
+
 
 **Observações**
 
