@@ -43,3 +43,14 @@
   border: 1px solid #ddd;
   font-size: 15px;
 }
+
+.btn-novo-servidor {
+  margin: 20px 0;
+  padding: 10px 15px;
+  background-color: #ff7a00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}

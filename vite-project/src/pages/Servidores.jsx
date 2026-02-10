@@ -47,6 +47,14 @@ function Servidores() {
 
       <h1>Gestão de Servidores</h1>
 
+      <button
+        className="btn-novo-servidor"
+        onClick={() => navigate("/servidores/novo")}
+      >
+        ➕ Cadastrar Novo Servidor
+      </button>
+
+
       <div className="filtros">
         <select
           value={filtroFuncao}

@@ -5,6 +5,7 @@ import DashboardEscola from "./pages/DashboardEscola";
 import Turmas from "./pages/Turmas";
 import AlunosTurma from "./pages/AlunosTurma";
 import Servidores from "./pages/Servidores";
+import CadastroServidor from "./pages/servidores/CadastroServidor";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/turmas" element={<Turmas />} />
       <Route path="/turma/:id" element={<AlunosTurma />} />
       <Route path="/servidores" element={<Servidores />} />
+      <Route path="/servidores/novo" element={<CadastroServidor />} />
     </Routes>
   );
 }

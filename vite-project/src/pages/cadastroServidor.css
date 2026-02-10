@@ -1,0 +1,118 @@
+/* CONTAINER GERAL */
+.cadastro-servidor {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* BOTÃO VOLTAR */
+.btn-voltar {
+  background: none;
+  border: none;
+  color: #d35400; /* laranja da marca */
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn-voltar:hover {
+  text-decoration: underline;
+}
+
+/* TÍTULO */
+.cadastro-servidor h1 {
+  margin-bottom: 24px;
+  color: #333;
+}
+
+/* FORMULÁRIO */
+.form-servidor {
+  background: #fff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* CAMPO */
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.campo label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* INPUTS E SELECTS */
+.campo input,
+.campo select {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.campo input:focus,
+.campo select:focus {
+  outline: none;
+  border-color: #e67e22;
+}
+
+/* ERRO */
+.erro {
+  background: #ffe6e6;
+  color: #c0392b;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+/* AÇÕES */
+.acoes-form {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* BOTÕES */
+.btn-salvar {
+  background: #e67e22;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-salvar:hover {
+  background: #d35400;
+}
+
+.btn-cancelar {
+  background: #ecf0f1;
+  color: #333;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-cancelar:hover {
+  background: #dcdde1;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .form-servidor {
+    padding: 18px;
+  }
+
+  .acoes-form {
+    flex-direction: column;
+  }
+}
