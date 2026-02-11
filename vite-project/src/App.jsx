@@ -6,6 +6,9 @@ import Turmas from "./pages/Turmas";
 import AlunosTurma from "./pages/AlunosTurma";
 import Servidores from "./pages/Servidores";
 import CadastroServidor from "./pages/servidores/CadastroServidor";
+import DashboardSecretaria from "./pages/DashboardSecretaria";
+import CadastroProjeto from "./pages/projetos/CadastroProjeto";
+
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
       <Route path="/turmas" element={<Turmas />} />
       <Route path="/turma/:id" element={<AlunosTurma />} />
       <Route path="/servidores" element={<Servidores />} />
+      <Route path="/dashboard-secretaria" element={<DashboardSecretaria />} />
+      <Route path="/cadastro-projeto" element={<CadastroProjeto />} />
+
       <Route path="/servidores/novo" element={<CadastroServidor />} />
     </Routes>
   );

@@ -14,8 +14,16 @@ function Login() {
       return;
     }
 
-    console.log("Login OK, indo para dashboard");
-    navigate("/dashboard");
+    //  Simulação de tipos de usuário
+    if (user === "secretaria" && password === "123") {
+      navigate("/dashboard-secretaria");
+    } 
+    else if (user === "diretora" && password === "123") {
+      navigate("/dashboard");
+    } 
+    else {
+      alert("Usuário ou senha inválidos");
+    }
   }
 
   return (
@@ -44,6 +52,12 @@ function Login() {
         />
 
         <button onClick={handleLogin}>Entrar</button>
+
+        <div style={{ fontSize: "12px", marginTop: "10px", opacity: 0.7 }}>
+          <p><strong>Teste:</strong></p>
+          <p>Diretora → diretora / 123</p>
+          <p>Secretaria → secretaria / 123</p>
+        </div>
       </div>
     </div>
   );
