@@ -26,15 +26,7 @@ function DashboardSecretaria() {
                 </div>
 
             </div>
-            <div
-                className="card-acao"
-                onClick={() => navigate("/cadastro-projeto")}
-            >
-                <h3>📌 Cadastro de Projetos</h3>
-                <p>Criar e gerenciar projetos educacionais</p>
-            </div>
-
-
+            
             {/* AÇÕES */}
             <div className="acoes-container">
 

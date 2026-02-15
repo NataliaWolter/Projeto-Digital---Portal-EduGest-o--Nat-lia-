@@ -1,0 +1,75 @@
+.pagina {
+  min-height: 100vh;
+  background-color: #f4e8dc;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.btn-voltar {
+  background: none;
+  border: none;
+  color: #ff6b00;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1f2d3d;
+  margin-bottom: 40px;
+}
+
+.form-projeto {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-projeto input,
+.form-projeto textarea,
+.form-projeto select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-projeto textarea {
+  resize: none;
+  height: 100px;
+}
+
+.lista-professores {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.professor-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.btn-salvar {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-salvar:hover {
+  background-color: #e85d00;
+}
